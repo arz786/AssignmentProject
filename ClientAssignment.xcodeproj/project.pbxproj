@@ -6,6 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FE8B94222F1021FF008B9BD7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE8B94212F1021FF008B9BD7 /* Alamofire */; };
+		FE8B94252F102290008B9BD7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FE8B94242F102290008B9BD7 /* RealmSwift */; };
+		FE8B945C2F1026F7008B9BD7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FE8B945B2F1026F7008B9BD7 /* RxCocoa */; };
+		FE8B945E2F1026F7008B9BD7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FE8B945D2F1026F7008B9BD7 /* RxSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE8B94172F100826008B9BD7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FE8B93EB2F1003DD008B9BD7 /* ClientAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +56,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE8B945C2F1026F7008B9BD7 /* RxCocoa in Frameworks */,
+				FE8B94252F102290008B9BD7 /* RealmSwift in Frameworks */,
+				FE8B945E2F1026F7008B9BD7 /* RxSwift in Frameworks */,
+				FE8B94222F1021FF008B9BD7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				FE8B93ED2F1003DD008B9BD7 /* ClientAssignment */,
+				FE8B94132F100826008B9BD7 /* Frameworks */,
 				FE8B93EC2F1003DD008B9BD7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +83,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FE8B94132F100826008B9BD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,6 +100,7 @@
 				FE8B93E72F1003DD008B9BD7 /* Sources */,
 				FE8B93E82F1003DD008B9BD7 /* Frameworks */,
 				FE8B93E92F1003DD008B9BD7 /* Resources */,
+				FE8B94172F100826008B9BD7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -78,6 +111,10 @@
 			);
 			name = ClientAssignment;
 			packageProductDependencies = (
+				FE8B94212F1021FF008B9BD7 /* Alamofire */,
+				FE8B94242F102290008B9BD7 /* RealmSwift */,
+				FE8B945B2F1026F7008B9BD7 /* RxCocoa */,
+				FE8B945D2F1026F7008B9BD7 /* RxSwift */,
 			);
 			productName = ClientAssignment;
 			productReference = FE8B93EB2F1003DD008B9BD7 /* ClientAssignment.app */;
@@ -107,6 +144,11 @@
 			);
 			mainGroup = FE8B93E22F1003DD008B9BD7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FE8B94202F1021FF008B9BD7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FE8B94232F102290008B9BD7 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				FE8B945A2F1026F7008B9BD7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FE8B93EC2F1003DD008B9BD7 /* Products */;
 			projectDirPath = "";
@@ -333,6 +375,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE8B94202F1021FF008B9BD7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.0;
+			};
+		};
+		FE8B94232F102290008B9BD7 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FE8B945A2F1026F7008B9BD7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE8B94212F1021FF008B9BD7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE8B94202F1021FF008B9BD7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FE8B94242F102290008B9BD7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE8B94232F102290008B9BD7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		FE8B945B2F1026F7008B9BD7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE8B945A2F1026F7008B9BD7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FE8B945D2F1026F7008B9BD7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE8B945A2F1026F7008B9BD7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE8B93E32F1003DD008B9BD7 /* Project object */;
 }
